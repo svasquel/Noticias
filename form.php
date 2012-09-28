@@ -13,7 +13,9 @@
         	<label>Posa un títol</label><input name="title" id="title">
         	<label>Escriu el cos</label><textarea name="content" id="content"></textarea>
         </fieldset>
-    
+        
+        <label>Enllaç o vídeo</label> <textarea name="link" id="link"></textarea>
+      
         <label>Imatge</label><input name="image" id="image" type="file">
        
    <label>Arxius per pujar amb nom (petit comentari):</label>
