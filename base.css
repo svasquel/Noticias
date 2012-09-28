@@ -1,0 +1,51 @@
+/* CSS Document */
+*{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	outline:none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	color:#333;
+	text-decoration:none;
+	list-style:none;
+}
+a{color:#06F}
+body{background:#eee}
+	
+.box{
+	background:#fff;
+	box-shadow:0 0 5px #aaa;
+	width:600px;
+	margin: 50px auto;
+	padding:50px;
+	}
+input, textarea{
+	border-radius:5px;
+	background:#fff;
+	box-shadow: 0 0 2px #06F;
+	padding:5px;
+	margin:5px;
+}
+.archivo{background:rgba(0,112,225,0.05);margin-top:10px; padding:5px;}
+textarea{width:580px}
+input.input_file{width:570px}
+label{display:block;}
+button{
+	background:#5BADFF;
+	text-shadow:0 1px 0 #BFDFFF;
+	padding:5px;
+	border-radius:2px;
+	box-shadow: 0 0 4px #111;
+	display:block;
+	width:300px;
+	font-size:24px;
+	margin: 0 auto;
+}
+button:hover{box-shadow: 0 0 8px #111}
+input:hover{box-shadow: 0 0 2px #F60}
+li.negative, li.positive{margin-left:40px}
+.negative{color:#E10005}
+.positive{color:#0CE100}
+.img-form{width:300px;margin:0 auto;display:block}
