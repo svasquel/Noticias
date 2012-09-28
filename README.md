@@ -1,29 +1,32 @@
 ESTE PAQUETE ESTÁ FORMADO POR:
-->form.php
-->function.php
-->functions.js
-->base.css
-->list.txt
+
+	form.php
+	function.php
+	functions.js
+	base.css
+	list.txt
 
 =============================
 
 PARA QUE FUNCIONE POR DEFECTO SE HAN DE CREAR LAS
 SIGUIENTES CARPETAS A LA ALTURA DE LOS DEMAS ARCHIVOS
-	->docs
-	->news
-	->pics
-	->news-change
+
+	docs
+	news
+	pics
+	news-change
 	
 =============================
 
 ARCHIVO form.php
-^^^^^^^^^^^^^^^^
+=
+
 	ESTE ARCHIVO CONTIENE EL FORMULARIO COMPLETO.
 	SI NO SE DESEA ALGUNA DE LAS UTILIDADES SÓLO ES
 	NECESARIO ELIMINAR EL INPUT QUE NO SE QUIERA.
 	
 ARCHIVO function.php
-^^^^^^^^^^^^^^^^^^^^
+=
 	ESTE ARCHIVO CONTIENE LA FUNCION EN PHP. LOS
 	PARÁMETROS A MODIFICAR SON //GENERAL VARS//
 	QUE HAN DE INCLUIR LAS RUTAS RELATIVAS A
@@ -32,17 +35,17 @@ ARCHIVO function.php
 	NADA.
 	
 ARCHIVO functions.js
-^^^^^^^^^^^^^^^^^^^^
+=
 	ESTE ARCHIVO CONTIENE LA FUNCIÓN EN JAVASCRIPT
 	QUE HACE AÑADIR TODOS LOS ARCHIVOS ADJUNTOS QUE
 	SE DESEE.
 	
 ARCHIVO base.css
-^^^^^^^^^^^^^^^^
+=
 	CONTIENE LOS ESTILOS
 	
 ARCHIVO list.txt
-^^^^^^^^^^^^^^^^
+=
 	LISTA DE TITULOS DE LAS DIFERENTES NOTICIAS.
 	PUEDE SERVIR PARA CONTROLAR TODAS LAS NOTICIAS
 	QUE HAY CARGADAS.
