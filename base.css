@@ -1,11 +1,12 @@
 /* CSS Document */
+
+/*RESET*/
 *{
-	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	outline:none;
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	vertical-align: baseline;
 	color:#333;
 	text-decoration:none;
@@ -20,7 +21,8 @@ body{background:#eee}
 	width:600px;
 	margin: 50px auto;
 	padding:50px;
-	}
+}
+/*FORM*/	
 input, textarea{
 	border-radius:5px;
 	background:#fff;
@@ -49,3 +51,14 @@ li.negative, li.positive{margin-left:40px}
 .negative{color:#E10005}
 .positive{color:#0CE100}
 .img-form{width:300px;margin:0 auto;display:block}
+
+/*NEW*/
+h2{font-size:20px;font-weight:bold;}
+.author,.date{display:block; font-style:italic;font-size:13px;color:#777}
+.img_span{width:400px; height:300px;display:block;
+	box-shadow:0 0 4px #ccc;
+	border: 10px solid #f2f2f2;
+	margin:10px auto;
+}
+.docs{background: #5BADFF;}
+.docs a{color:#333}

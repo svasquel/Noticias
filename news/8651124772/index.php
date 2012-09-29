@@ -3,11 +3,12 @@
 <html>
 <head>
 <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
-<title>Noticias -<? include 'title.html' ;?> </title>
+<link rel='stylesheet' type='text/css' href='../../base.css'/>
+<title>Noticias - <? include 'title.html' ;?> </title>
 </head>
 <body>
 
-<div>
+<div class='box'>
 	<h2><? include 'title.html' ;?></h2>
 	<hr>
 
@@ -17,7 +18,7 @@
 	</div>
 
 	<div <? include 'image_class.html' ;?>>
-		<span style='background:url(../../pics/8651124772.jpg) no-repeat 0 top; background-size:cover'></span>
+		<span class='img_span' style='background:url(../../pics/8651124772.jpg) no-repeat 0 top; background-size:cover'></span>
 	</div>
 
 	<p><? include 'content.html' ;?></p>
@@ -32,7 +33,7 @@
 			$title_file= fopen($title_name,'r');
 			$title= fread($title_file,filesize($title_name));
 			$title = utf8_encode($title);
-			echo '<li><a href="'.$file[$i].'" target="_blank">'.$title.'</a></li>';
+			echo '<li class=\'docs\'><a href="'.$file[$i].'" target="_blank">'.$title.'</a></li>';
 		}
 	}
 	?>
