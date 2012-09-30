@@ -300,7 +300,7 @@ $change='
    </div>
    <a href="#" onClick="addCampo()">Pujar un altre arxiu</a>
 
-    <button type="submit" name="enviar">Enviar</button>
+    <button class="button color blue" type="submit" name="enviar">Enviar</button>
     </form>
 </body>
 </html>
@@ -313,7 +313,7 @@ $change = stripslashes($change);
 
 //GENERATE CHANGE FILE//
 		$fp=fopen("$change_folder$file.php","w+");
-		if(fwrite($fp,$change)){echo "<li class='positive'>S'ha penjat el formulari editable de la notícia <a href='news-change/".$file.".php'>Editar noticia</a></li>";}
+		if(fwrite($fp,$change)){echo "<li class='positive'>S'ha penjat el formulari editable de la notícia <a class='button' href='news-change/".$file.".php'>Editar noticia</a></li>";}
 			else{echo "<li class='negative'> NO s'ha penjat el formulari editable de la notícia</li>";}
 		fclose($fp);
 
@@ -355,7 +355,7 @@ $change = stripslashes($change);
 ?>
         
 		</ul>
-        <a class="gestio-new" href="form.php">Anar al formulari inicial</a>
+        <div class="parent"><a class="button color blue" href="form.php">Anar al formulari inicial</a></div>
 		</div><!--end .box-->
 	
 	</div><!--end #content-->

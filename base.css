@@ -12,7 +12,7 @@
 	text-decoration:none;
 	list-style:none;
 }
-a{color:#06F}
+a{color:#06F;}
 body{background:#eee}
 	
 .box{
@@ -29,24 +29,51 @@ input, textarea{
 	box-shadow: 0 0 2px #06F;
 	padding:5px;
 	margin:5px;
+	resize:none;
 }
-.archivo{background:rgba(0,112,225,0.05);margin-top:10px; padding:5px;}
+input:hover{box-shadow: 0 0 2px #F60}
+.archivo{margin-top:10px; padding:5px;background-color:rgba(0,112,225,0.05)}
 textarea{width:580px}
 input.input_file{width:570px}
 label{display:block;}
-button{
-	background:#5BADFF;
-	text-shadow:0 1px 0 #BFDFFF;
-	padding:5px;
-	border-radius:2px;
-	box-shadow: 0 0 4px #111;
-	display:block;
-	width:300px;
-	font-size:24px;
-	margin: 0 auto;
+.button{
+  display: block;
+  zoom: 1;
+  padding: 8px 30px;
+  margin: 0 auto;
+  cursor: pointer;
+  border: 1px solid #bbb;
+  color: #555;
+  background-color: #ddd;
+  background-image: linear-gradient(top, rgba(255,255,255,1),rgba(255,255,255,0)),url(data:image/png;base64,iVBORw0KGg[...]QmCC); 
+  transition: background-color .2s ease-out;
+  -moz-transition:background-color .2s ease-out;
+  -webkit-transition:background-color .2s ease-out;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .3),
+              0 2px 2px -1px rgba(0, 0, 0, .5),
+              0 1px 0 rgba(255, 255, 255, .3) inset;
+  text-shadow: 0 1px 0 rgba(255,255,255, .9); 
+  font-size:14px;
 }
-button:hover{box-shadow: 0 0 8px #111}
-input:hover{box-shadow: 0 0 2px #F60}
+
+.button:hover{background-color: #eee;color: #555;}
+.button:active{
+  background: #e9e9e9;
+  position: relative;
+  top: 1px;
+  text-shadow: none;  
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+}
+.color{
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0,0,0,.2);
+  background-image: linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0)),url(data:image/png;base64,iVBORw0KGg[...]QmCC);}
+.color:hover{color:#fff}
+.blue{background-color: #269CE9;border-color: #269CE9;}
+.blue:hover{background-color: #70B9E8;}
+.blue:active{background: #269CE9;}
+
 li.negative, li.positive{margin-left:40px}
 .negative{color:#E10005}
 .positive{color:#0CE100}
@@ -60,5 +87,7 @@ h2{font-size:20px;font-weight:bold;}
 	border: 10px solid #f2f2f2;
 	margin:10px auto;
 }
-.docs{background: #5BADFF;}
-.docs a{color:#333}
+.docs{margin:5px 30px;}
+.docs a:before{content:'&Omega;'}
+a.button{display:inline-block}
+.parent{text-align:center; display:block}
