@@ -24,7 +24,7 @@
 		}
 		?>
         <label>Imatge</label><input name="image" id="image" type="file">
-   <p>Arxius ja existents</p>
+   <p>Arxius ja existents. Si actives el "checkbox" i envies el formulari, l'arxiu s'eliminarà</p>
    <?
    $file= glob("../docs/8651124772_*");
 	for ($i = 0; $i < count($file); $i++) {

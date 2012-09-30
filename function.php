@@ -143,6 +143,7 @@ if (isset ($_POST["eliminar"])){
 		if(unlink($eliminar[$i])&& unlink($eliminar_txt[$i])){
 			echo "<li class='positive'>S'ha eliminat correctament l'arxiu <i>".$eliminar[$i]."</i> ";
 		}
+		else{echo "<li class='negative'>Hi ha hagut algun problema i no s'ha pogut eliminar correctament l'arxiu <i>".$eliminar[$i]."</i> ";}
 	}
 }
 if (isset ($_FILES["archivos"])) {
@@ -275,7 +276,7 @@ $change='
 		}
 		?>
         <label>Imatge</label><input name="image" id="image" type="file">
-   <p>Arxius ja existents</p>
+   <p>Arxius ja existents. Si actives el "checkbox" i envies el formulari, l\'arxiu s\'eliminarà</p>
    <?
    \$file= glob("../'.$docs.$file.'_*");
 	for (\$i = 0; \$i < count(\$file); \$i++) {
