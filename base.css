@@ -65,35 +65,7 @@ label{display:block;}
   text-shadow: none;  
   box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
 }
-.color{
-  color: #fff;
-  text-shadow: 0 1px 0 rgba(0,0,0,.2);
-  background-image: linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0)),url(data:image/png;base64,iVBORw0KGg[...]QmCC);}
-.color:hover{color:#fff}
-.blue{background-color: #269CE9;border-color: #269CE9;}
-.blue:hover{background-color: #70B9E8;}
-.blue:active{background: #269CE9;}
-
-li.negative, li.positive{margin-left:40px}
-.negative{color:#E10005}
-.positive{color:#0CE100}
-.img-form{width:300px;margin:0 auto;display:block}
-
-/*NEW*/
-h2{font-size:20px;font-weight:bold;}
-.author,.date{display:block; font-style:italic;font-size:13px;color:#777}
-.img_span{width:400px; height:300px;display:block;
-	box-shadow:0 0 4px #ccc;
-	border: 10px solid #f2f2f2;
-	margin:10px auto;
-}
-.docs{margin:5px 30px;}
-.docs a:before{content:"\2605"}
-
-a.button{display:inline-block; margin:10px;}
-.parent{text-align:center; display:block}
-.button:before
-{
+.button:before{
 	background: #ccc;
 	background: rgba(0,0,0,.1);
 	float: left;        
@@ -110,7 +82,32 @@ a.button{display:inline-block; margin:10px;}
         pointer-events: none;
 	font-size:24px;        
 }
-.edit:before
-{
-	content: "\270E";        
+.color{
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0,0,0,.2);
+  background-image: linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0)),url(data:image/png;base64,iVBORw0KGg[...]QmCC);}
+.color:hover{color:#fff}
+.blue{background-color: #269CE9;border-color: #269CE9;}
+.blue:hover{background-color: #70B9E8;}
+.blue:active{background: #269CE9;}
+
+li.negative, li.positive{margin-left:40px;}
+.negative{color:#E10005}
+.negative:before{content:"\2718"; margin-right:5px;}
+.positive{color:#0CE100}
+.positive:before{content:"\2714"; margin-right:5px;}
+.img-form{width:300px;margin:0 auto;display:block}
+
+h2{font-size:20px;font-weight:bold;}
+.author,.date{display:block; font-style:italic;font-size:13px;color:#777}
+.img_span{width:400px; height:300px;display:block;
+	box-shadow:0 0 4px #ccc;
+	border: 10px solid #f2f2f2;
+	margin:10px auto;
 }
+.docs{margin:5px 30px;}
+.docs a:before{content:"\2605"}
+
+a.button{display:inline-block; margin:10px;}
+.parent{text-align:center; display:block}
+.edit:before{content: "\270E";}
