@@ -49,7 +49,7 @@
    </div>
    <a href="#" onClick="addCampo()">Pujar un altre arxiu</a>
 
-    <button type="submit" name="enviar">Enviar</button>
+    <button class="button color blue" type="submit" name="enviar">Enviar</button>
     </form>
 </body>
 </html>
