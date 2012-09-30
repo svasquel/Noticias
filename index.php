@@ -22,6 +22,8 @@ $news=glob($news_folder.'*');
 	echo '<li><a href="'.$news[$i].'">'.$title.'</a><a class="button edit" href="'.$news_change_folder.$file.'.php">Editar</a></li>';
 	}
 ?>
+
+<div class="parent"><a class="button color blue" href="form.php">Crear una nova notícia</a></div>
 </ul>
 </div>
 </body>
