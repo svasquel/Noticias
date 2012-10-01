@@ -93,7 +93,7 @@ if($Mes=='Abril'||$Mes=='Agost'||$Mes=='Octubre'){
 
 //GENERATE  DIRECTORY//
 
-if(!file_exists("$news$file")) mkdir("$news$file", 0777,true);
+if(!file_exists("$news$file")){mkdir("$news$file", 0777,true);}
 
 //GENERATE IMAGES & PDFs//
 ?>
