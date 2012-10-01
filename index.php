@@ -18,7 +18,8 @@ $news=glob($news_folder.'*');
 	for ($i = 0; $i < count($news); $i++) {
 	$title_file= fopen($news[$i].'/title.html','r');
 	$title= fread($title_file,filesize($news[$i].'/title.html'));
-	$file=end(explode($news_folder,$news[$i]));
+	$file_exp=explode($news_folder,$news[$i]);
+    $file=$file_exp[count($file_exp)-1];
 	echo '<li><a href="'.$news[$i].'">'.$title.'</a><a class="button edit" href="'.$news_change_folder.$file.'.php">Editar</a></li>';
 	}
 ?>

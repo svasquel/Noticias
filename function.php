@@ -10,7 +10,7 @@
 		<h2>Accions realitzades amb èxit</h2>
 <?
 //FILE NAME
-if($_POST['file']){
+if(isset($_POST['file'])){
 	$file=$_POST['file'];
 }
 else{
@@ -93,7 +93,7 @@ if($Mes=='Abril'||$Mes=='Agost'||$Mes=='Octubre'){
 
 //GENERATE  DIRECTORY//
 
-mkdir("$news$file", 0777,true);
+if(!file_exists("$news$file")) mkdir("$news$file", 0777,true);
 
 //GENERATE IMAGES & PDFs//
 ?>
