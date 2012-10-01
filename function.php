@@ -238,7 +238,6 @@ $index="
 			\$title_name = '../..'.\$exp[count(\$exp)-2].'.txt';
 			\$title_file= fopen(\$title_name,'r');
 			\$title= fread(\$title_file,filesize(\$title_name));
-			\$title = utf8_encode(\$title);
 			echo '<li class=\'docs\'><a href=\"'.\$file[\$i].'\" target=\"_blank\">'.\$title.'</a></li>';
 		}
 	}
@@ -285,7 +284,6 @@ $change='
 			\$title_name = "..".\$exp[count(\$exp)-2].".txt";
 			\$title_file= fopen(\$title_name,"r");
 			\$title= fread(\$title_file,filesize(\$title_name));
-			\$title = utf8_encode(\$title);
 			echo "<li><a href=\'".\$file[\$i]."\' target=\'_blank\'>".\$title."</a><input name=\'eliminar[]\' type=\'checkbox\' value=\'".end(explode("'.$docs.'",\$file[\$i]))."\'</li>";
 		}
 	}
